@@ -1,0 +1,198 @@
+body {
+    background-color: #202124;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+h1 {
+    font-size: 6.5em;
+    display: flex;
+    text-align: center;
+    color: #f7f7f7;
+    top: 40%;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    line-height: 2;
+    object-position: center bottom;
+}
+
+ul.about a {
+    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+    display: inline;
+    /* justify-content: space-between; */
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav ul {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    /* justify-content: space-between; */
+
+}
+
+.about {
+    display: inline;
+    margin-top: 2px;
+    position: relative;
+}
+
+.gmail {
+    display: inline;
+    margin: 0;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    position: relative;
+    left: 81%;
+
+}
+
+.gmail a {
+    display: inline;
+    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+    display: inline;
+    margin: 0;
+}
+
+.gmail a:link {
+    color: white;
+}
+
+.gmail a:visited {
+    color: white;
+}
+
+.gmail a:hover {
+    text-decoration: underline;
+}
+
+
+ul,
+li {
+    display: inline;
+    /* margin: 0;
+    padding: 0;
+    flex: 1;
+    max-width: 50%;
+    display: flex; */
+    justify-content: space-evenly;
+    padding: 8px;
+    margin-top: 12px;
+}
+
+
+input.nosubmit:hover {
+    background-color: rgb(58, 58, 58);
+}
+
+form.nosubmit {
+    border: none;
+    padding: 0;
+}
+
+input.nosubmit:onclick {
+    border: none;
+}
+
+input.nosubmit {
+    margin-top: 100px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    size: 90px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 20px;
+    background: transparent;
+    border: 1px solid rgb(138, 138, 138);
+    height: 35px;
+    width: 460px;
+    border: 1px solid rgb(138, 138, 138);
+    display: block;
+    padding: 9px 4px 9px 40px;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 13px center;
+}
+
+.sub1 {
+    width: 40px;
+    position: absolute;
+    top: 31%;
+    right: 33%;
+    left: 68%;
+    border-radius: 60%;
+    padding: 9px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: -8px 1px;
+    cursor: pointer;
+}
+
+.sub2 {
+    width: 40px;
+    position: absolute;
+    top: 31%;
+    right: 33%;
+    left: 63%;
+    border-radius: 60%;
+    padding: 9px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: -8px 1px;
+    cursor: pointer;
+    background-image: url("https://play.google.com/store/apps/details?id=com.google.android.GoogleCamera&hl=en_US&gl=US");
+    background: fill;
+}
+
+.reese {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    max-width: 25%;
+    justify-content: space-between;
+    padding: 3%;
+}
+
+
+.gg-menu-grid-o {
+    color: white;
+    display: inline;
+    margin: 0;
+    /* flex: 0 0 100px; */
+    /* border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; */
+    border: 0;
+    left: 10;
+    top: 10%;
+    position: absolute;
+    bottom: 90%;
+
+
+
+}
+
+img {
+    border-radius: 50%;
+    size: 1%;
+    width: 20px;
+    position: absolute;
+}

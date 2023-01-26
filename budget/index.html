@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="app">
+    <table class="budget">
+        <thead>
+            <tr>
+                <th class="names">Date</th>
+                <th>Description</th>
+                <th>type</th>
+                <th>Amount</th>
+
+            </tr>
+        </thead>
+        <div class="entries">
+            <td>
+                <input type="date" class="date">
+            </td>
+        </div>
+        <td>
+            <div class="input">
+                <input type="input" class="input">
+        </td>
+</div>
+<div class="expense">
+    <td>
+        <select name="expense">
+            <option value="income">Income</option>
+            <option value="Expense">Expense</option>
+        </select>
+    </td>
+    <div class="amount">
+        <td>
+            <input type="number">
+        </td>
+        <div class="btn">
+            <td>
+                <button class="delete">&#10005</button>
+            </td>
+        </div>
+        <tfoot class="sum">
+            <tr>
+                <td colspan="5" class="sum">
+                    <strong>Total:</strong>
+                    <span class="total">$0</span>
+                </td>
+            </tr>
+        </tfoot>
+    </div>
+</div>
+</table>
+</div>
+
+<body>
+
+</body>
+
+</html>

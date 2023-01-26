@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="site-content">
+        <form name="RedditSearch" method="post"><b>Reddit Sidekick</b>
+
+            <p />
+            <input type="radio" name="time" value="all" checked>All &nbsp;
+            <input type="radio" name="time" value="year">Year &nbsp;
+            <input type="radio" name="time" value="month">Month &nbsp;
+            <input type="radio" name="time" value="week">Week &nbsp;
+            <input type="radio" name="time" value="day">Day &nbsp;
+            <br>
+            <select id="typeselect">
+                <option value="relevance">Relevance</option>
+                <option value="new">New</option>
+                <option value="top">Top</option>
+                <option value="hot">Hot</option>
+            </select>
+            <input type="text" id="query" size="10" />
+            <input type="button" id="buttonsearch" value="Search" />
+        </form>
+        <div id="results"></div>
+    </div>
+    <!-- <div class="options">
+        <label>Post Type:</label>
+        <select class="post-type">:
+            <option value="new">Hot</option>
+            <option value="new">New</option>
+            <option value="top">Top</option>
+            <option value="random">Random</option>
+            <option value="rising">Rising</option>
+            <option value="controversial">Controversial</option>
+        </select>
+    </div>
+
+    <div class="post-container">
+        <h3>posts from r/AskReddit</h3> -->
+    <!-- <a class="post" href="(original link for post goes here)">
+            <div class="title"> title </div>
+            <div class="content"> content </div>
+            <div class="author"> author </div> -->
+    <!-- </a>
+        <a class="post" href="(original link for post goes here)">
+            <div class="title"> title </div>
+            <div class="content"> content </div>
+            <div class="author"> author </div>
+        </a> -->
+    <!-- </div> -->
+
+    <button class="post">new Post</button>
+
+    <!-- <pre class="reddit-dump"></pre> -->
+    <script src="app.js"></script>
+</body>
+
+</html>
