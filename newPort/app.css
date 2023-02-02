@@ -1,5 +1,6 @@
-html {
-    scroll-behavior: smooth;
+html,
+body {
+    scroll-behavior: smooth
 }
 
 html,
@@ -251,7 +252,7 @@ a.dropdown-item:hover {
     color: #ffffff;
     cursor: pointer;
     direction: ltr;
-    display: block;
+    /* display: block; */
     font-family: "SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;
     font-weight: 700;
@@ -335,6 +336,10 @@ a.dropdown-item:hover {
     }
 }
 
+#linkBtn:hover {
+    cursor: pointer;
+}
+
 #exploreBtn:disabled {
     cursor: default;
     opacity: .3;
@@ -363,6 +368,7 @@ a.dropdown-item:hover {
 
 #arrowdown,
 #arrow {
+    top: 190px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -398,6 +404,7 @@ a.dropdown-item:hover {
     font-size: 60px;
     font-weight: bolder;
     color: #000000;
+    overflow-y: hidden;
 }
 
 
@@ -413,7 +420,7 @@ a.dropdown-item:hover {
     transform: skew(4deg, -1deg);
     position: relative;
     bottom: -500px;
-    left: -90px;
+    left: -65px;
     font-family: 'Kanit', sans-serif;
     font-family: 'Space Mono', monospace;
     justify-content: space-evenly;
@@ -528,6 +535,7 @@ a.dropdown-item:hover {
     font-size: 60px;
     font-weight: bolder;
     color: #000000;
+    overflow-y: hidden;
 }
 
 #projectColAbout {
@@ -810,45 +818,15 @@ a.dropdown-item:hover {
     height: 500px;
 }
 
-
-
-@media (min-width: 280px) and (max-width: 851px) {
-
-    #mainNavigation {
-        /* position: fixed; */
-        max-height: 10px;
-        margin: 0;
-        margin-top: 15px;
-        background-color: black;
-        justify-content: space-evenly;
-        padding-top: 0px;
-        padding-bottom: 25px;
-    }
-
-    #mainNavigation>div {
-        max-height: 10px;
-        margin: 0;
-        margin-top: -15px;
-        background-color: black;
-        justify-content: space-evenly;
-        padding-top: 0px;
-        padding-bottom: 43px;
-    }
+@media only screen and (min-width: 220px) and (max-width: 320px) {
 
     html,
     body {
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-
-    body {
-        max-width: 540px;
-        margin: 0 auto !important;
-        float: none !important;
+        scroll-behavior: smooth
     }
 
     #para {
-        display: flex;
+        top: 245px;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -859,9 +837,119 @@ a.dropdown-item:hover {
         min-width: 638px;
         max-height: 2050px;
         transform: skew(10deg, -4deg);
-        position: absolute;
+        position: relative !important;
         bottom: 512px;
         left: -48px;
+    }
+
+    #introName2 {
+        position: relative;
+        right: 90px;
+        left: -118px;
+        bottom: 1px;
+        top: 150px;
+        width: 189990px;
+        font-size: 25px;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+
+
+    #introText {
+        position: relative;
+        width: 1170px;
+        font-size: 10px;
+        width: 190px;
+        right: 90px;
+        left: -389px;
+        bottom: 1px;
+        top: 175px;
+        max-width: 190px;
+        white-space: nowrap;
+    }
+
+    #introHello {
+        position: relative;
+        right: 90px;
+        left: 67px;
+        bottom: 100px;
+        top: 150px;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    #atomEmoji {
+        font-size: 45px;
+        position: relative;
+        right: 90px;
+        left: 80px;
+        bottom: 1px;
+        top: -49px;
+    }
+}
+
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+
+    html,
+    body {
+        scroll-behavior: smooth
+    }
+
+    #mainNavigation {
+        width: 100%;
+
+        max-height: 10px;
+        margin: 0;
+        margin-top: 20px;
+        background-color: black;
+        justify-content: space-evenly;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #mainNavigation>div {
+        max-height: 10px;
+        margin: 0;
+        margin-top: -35px;
+        background-color: black;
+        justify-content: space-evenly;
+        padding-top: 0px;
+        padding-bottom: 30px;
+    }
+
+    html {
+        max-width: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    body {
+        max-width: 540px;
+        margin: 0 auto !important;
+        float: none !important;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    #para {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 638px;
+        max-width: 4638px;
+        min-height: 0px;
+        min-width: 638px;
+        height: 550px;
+        max-height: 2050px;
+        transform: skew(10deg, -4deg);
+        position: relative !important;
+        bottom: 312px;
+        left: -48px;
+        max-width: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+
     }
 
 
@@ -870,7 +958,7 @@ a.dropdown-item:hover {
         right: 90px;
         left: -118px;
         bottom: 1px;
-        top: 200px;
+        top: 150px;
         width: 189990px;
         font-size: 45px;
         font-weight: 600;
@@ -886,7 +974,7 @@ a.dropdown-item:hover {
         right: 90px;
         left: -419px;
         bottom: 1px;
-        top: 240px;
+        top: 190px;
         max-width: 190px;
         white-space: nowrap;
     }
@@ -895,8 +983,8 @@ a.dropdown-item:hover {
         position: relative;
         right: 90px;
         left: 59px;
-        bottom: 1px;
-        top: 200px;
+        bottom: 100px;
+        top: 150px;
         font-size: 45px;
         font-weight: 600;
     }
@@ -912,6 +1000,8 @@ a.dropdown-item:hover {
     #exploreButton {
         position: relative;
         top: 280px;
+        overflow-x: hidden;
+        overflow-y: scroll;
     }
 
     #mainLogo {
@@ -925,13 +1015,16 @@ a.dropdown-item:hover {
         height: 200px;
     }
 
+
     #webLogo {
+        display: none;
+        /* white-space: nowrap;
         position: relative;
-        max-width: 270%;
-        max-height: 270%;
+        max-width: 200%;
+        max-height: 200%;
         top: 80px;
-        left: 80px;
-        padding-top: 50px;
+        left: 120px;
+        padding-top: 50px; */
     }
 
     #meLogo,
@@ -940,6 +1033,8 @@ a.dropdown-item:hover {
     }
 
     #projectColYellow {
+        overflow-x: hidden;
+        overflow-y: scroll;
         float: left;
         display: flex;
         justify-content: center;
@@ -991,6 +1086,8 @@ a.dropdown-item:hover {
 
 
     #projectColAbout {
+        overflow-x: hidden;
+        overflow-y: scroll;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1029,7 +1126,7 @@ a.dropdown-item:hover {
         float: left;
         color: black;
         font-weight: 600;
-        font-size: 12px;
+        font-size: 11px;
         top: 2px;
         left: 4px;
         position: relative;
@@ -1160,6 +1257,7 @@ a.dropdown-item:hover {
         font-size: 60px;
         font-weight: bolder;
         color: #000000;
+        overflow-y: hidden;
     }
 
     #aboutImg {
