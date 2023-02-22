@@ -26,3 +26,55 @@
 .sale-badge {
     background-color: #E53935
 }
+
+
+#img1 {
+    background: no-repeat center center fixed;
+    height: 100vh;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    object-position: center;
+    align-items: center;
+    display: table-cell;
+    vertical-align: middle;
+    background-attachment: fixed;
+    background-position: center;
+    padding-left: inherit;
+    padding-top: -100px;
+    margin-top: -150px;
+}
+
+#img2 {
+    background: no-repeat center center fixed;
+    height: 100vh;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    object-position: center;
+    align-items: center;
+    display: table-cell;
+    vertical-align: middle;
+    background-attachment: fixed;
+    background-position: center;
+    padding-left: inherit;
+    padding-top: -100px;
+    margin-top: -350px;
+}
+
+#img3 {
+    background: no-repeat center center fixed;
+    height: 85vh;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    object-position: center;
+    align-items: center;
+    display: table-cell;
+    vertical-align: middle;
+    background-attachment: fixed;
+    background-position: center;
+    padding-left: inherit;
+    padding-top: -30px;
+    margin-top: -210px;
+}
