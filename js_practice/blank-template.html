@@ -1,188 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Table template</title>
-    <link href="minimal-table.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops: Task 1</title>
+
+    <!-- <link rel="stylesheet" href="../styles.css" /> -->
 </head>
 
 <body>
-    <h1 id="head" style="color: rgb(25, 19, 97);">Jackie cool? (maybe)</h1>
-    <!-- <div>
-        <table>
-            <thead>
-                <th>Name</th>
-                <th>mass</th>
-                <th>diameter</th>
-                <th>density</th>
-                <th>Gravity</th>
-            </thead>
-            <th>mercury</th>
-            <td>0.330</td>
-            <th> 4,879</th>
-            <th>5427</th>
-            <th> 3.7</th>
-
-        </table>
-    </div> -->
-
-
-    <script>
-
-        let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
-        for (let i = 0; i <= answer; i++) {
-            if (i % 3 === 0 && i % 5 === 0) {
-                console.log("fizzbuzz");
-            } else if (i % 3 === 0) {
-                console.log("fizz");
-            } else if (i % 5 === 0) {
-                console.log("buzz");
-            } else {
-                console.log(i);
-            }
+    <style>
+        p {
+            color: purple;
+            margin: 0.5em 0;
         }
 
-        // move rings by size from pillar a to b pillar and end on c with bigger rings on bottom
-        // IF pillar b is empty or has bigger ring and does not have smaller ring on it place ring
-        // ELSE move to pillar c
-        // If pillar c is empty or has bigger ring and does not have smaller ring on it place ring
-        // Else move to pillar a
-        // If pillar a is empty or has bigger ring and does not have smaller ring on it place ring
-        // WHEN all rings on C
-        // end
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+
+    <section class="preview">
 
 
 
-        // function lastLetter() {
-        //     const str = 'Reese'
-        //     const res = str.charAt(str.length - 1);
-        //     return res
-        // }
-        // console.log(lastLetter())
-
-        // const name = 'reese'
-
-        // const capitalized = name.charAt(0).toUpperCase() + name.slice(1);
-
-        // console.log(capitalized)
-
-        // function muliply(a, b) {
-        //     return a * b;
-        // }
-        // console.log(muliply(12, 12));
-
-        // function add7(n) {
-        //     return n + 7;
-        // }
-        // console.log(add7(7));
-
-
-
-
-        // const hour = new Date().getHours();
-        // let greeting;
-        // if (hour < s) {
-        //     greeting = "Good Day";
-        // } else if (hour > 20) {
-        //     greeting = "bad day";
-        // } else {
-        //     greeting = "whatever";
-        // }
-
-        // document.getElementById("head").innerHTML = greeting;
-
-
-        // const userName = prompt("Who's there?", '');
-
-        // if (userName === "Admin") {
-        //     let pass = prompt('Password?', '');
-
-        //     if (pass === "TheMaster") {
-        //         alert('Welcome!');
-        //     } else if (pass === '' || pass === null) {
-        //         alert('Canceled');
-        //     } else {
-        //         alert("Wrong password")
-        //     }
-        // } else if (userName === '' || userName === null) {
-        //     alert("Canceled")
-        // } else {
-        //     alert("I dont know you");
-        //     repeat();
-        // }
-
-
-
-        //Look at the selected month (stored in the choice variable. This will be the <select>
-        // element value after the value changes, so "January" for example.)
-        // Set a variable called days to be equal to the number of days in the selected month. To do
-        // this you'll have to look up the number of days in each month of the year.
-        // You can ignore leap years for the purposes of this example.
-        // Hints:
-
-        // You are advised to use logical OR to group multiple months together into a single condition;
-        //  many of them share the same number of days.
-        // Think about which number of days is the most common, and use that as a default value.
-        // If you make a mistake, you can always reset the example with the "Reset" button. If you get
-        //  really stuck, press "Show solution" to see a solution.
-
-
-
-//         switch (expression) {
-//   case choice1:
-//     run; this code
-//     break;
-
-//   case choice2:
-//     run; this code instead
-//     break;
-
-//   // include as many cases as you like
-
-//   default:
-//     actually, just run; this code
-// }
-
-// const select = document.querySelector('select');
-// const para = document.querySelector('p');
-
-// select.addEventListener('change', setWeather);
-
-// function setWeather() {
-//   const choice = select.value;
-
-//   switch (choice) {
-//     case 'sunny':
-//       para.textContent = 'It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream.';
-//       break;
-//     case 'rainy':
-//       para.textContent = 'Rain is falling outside; take a rain coat and an umbrella, and don\'t stay out for too long.';
-//       break;
-//     case 'snowing':
-//       para.textContent = 'The snow is coming down — it is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman.';
-//       break;
-//     case 'overcast':
-//       para.textContent = 'It isn\'t raining, but the sky is grey and gloomy; it could turn any minute, so take a rain coat just in case.';
-//       break;
-//     default:
-//       para.textContent = '';
-//   }
-// }
-
-
-// let season = 'summer';
-// let response;
-
-// if ( season === 'summer') {
-// response = 'Its a nice day out'
-// }else {
-// response = 'its lame out'
-// };
-
-    </script>
+    </section>
 
 </body>
+<script>
+    const name = 'Mustafa';
+    const para = document.createElement('p');
+
+    const phonebook = [
+        { name: 'Chris', number: '1549' },
+        { name: 'Li Kang', number: '9634' },
+        { name: 'Anne', number: '9065' },
+        { name: 'Francesca', number: '3001' },
+        { name: 'Mustafa', number: '6888' },
+        { name: 'Tina', number: '4312' },
+        { name: 'Bert', number: '7780' },
+        { name: 'Jada', number: '2282' },
+    ]
+
+
+    for (let i = 0; i < phonebook.length; i++) {
+        if (phonebook[i].name === name) {
+            console.log(phonebook['name'], phonebook['number'])
+            // or do something else here
+        }
+    }
+
+
+
+
+
+
+
+
+    // Don't edit the code below here!
+    const section = document.querySelector('section');
+    section.appendChild(para);
+</script>
 
 </html>
+
+<!-- console.log(people['name'], people['number']) -->
