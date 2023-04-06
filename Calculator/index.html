@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="buttons" id="calculator">
+
+            <div class="opButtons">
+                <div data-previous-operand class="previous-operand"></div>
+                <div data-current-operand class="current-operand"></div>
+                <div class="display">
+                    <span class="input">
+                    </span>
+
+                </div>
+                <button class="clear" onclick="clearResult()">C</button>
+
+            </div>
+
+            <div class="buttons" id="rowOne">
+                <button id="seven" value="7" type="button" data-number>7</button>
+                <button id="eight" value="8" type="button" data-number>8</button>
+                <button id="nine" value="9" type="button" data-number>9</button>
+                <button value="/" type="button" data-operator>÷</button>
+            </div>
+
+            <div class="buttons" id="rowTwo">
+                <button id="for" value="4" type="button" data-number>4</button>
+                <button id="five" value="5" type="button" data-number>5</button>
+                <button id="six" value="6" type="button" data-number>6</button>
+                <button value="" type="button" data-operator>×</button>
+            </div>
+
+            <div class="buttons" id="rowThree">
+                <button id="one" value="1" type="button" data-number>1</button>
+                <button id="two" value="2" type="button" data-number>2</button>
+                <button id="three" value="3" type="button" data-number>3</button>
+                <button value="-" type="button" data-operator>-</button>
+
+            </div>
+            <div class="buttons" id="rowFor">
+                <button value="." type="button" data-operator>.</button>
+                <button id="zero" value="0" type="button" data-number>0</button>
+                <button value="" data-equals id="result">=</button>
+                <button value="+" type="button" data-operator>+</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
